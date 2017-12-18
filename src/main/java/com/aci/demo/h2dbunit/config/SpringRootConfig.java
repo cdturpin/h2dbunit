@@ -1,4 +1,4 @@
-package com.aci.demo.h2dbunit;
+package com.aci.demo.h2dbunit.config;
 
 import javax.sql.DataSource;
 
