@@ -1,4 +1,4 @@
-package com.aci.demo.h2dbunit.domain;
+package com.aci.demo.h2dbunit.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;

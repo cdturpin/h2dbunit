@@ -1,4 +1,4 @@
-package com.aci.demo.h2dbunit.domain;
+package com.aci.demo.h2dbunit.model;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
@@ -16,7 +16,8 @@ import lombok.Data;
 @Data
 @Entity
 @Table(schema = "ACSDBO", name = "ACS_POS_MONTHLY_CHAR")
-@NamedQueries({ @NamedQuery(name = "Characteristic.findChar", query = "SELECT c from Characteristic c where c.characteristicId like :entityId ") })
+@NamedQueries({ @NamedQuery(name = "Characteristic.find", query = "SELECT c from Characteristic c "),
+				@NamedQuery(name = "Characteristic.findById", query = "SELECT c from Characteristic c where c.characteristicId like :entityId ") })
 public class Characteristic
 {
 	@EmbeddedId
